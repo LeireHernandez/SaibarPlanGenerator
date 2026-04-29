@@ -1599,7 +1599,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
       <i class="fas fa-map"></i> Explorar todo
     </button>
 
-    <div class="nav-section-label">Tu historia</div>
+    <div class="nav-section-label">Nuestra historia</div>
     <button class="nav-link" data-view="corkboard">
       <i class="fas fa-thumbtack"></i> Corcho de viajes
     </button>
@@ -1659,11 +1659,11 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
       </div>
     </div>
 
-    <div class="home-section-title">Últimas aventuras</div>
+    <div class="home-section-title">Últimos viajes</div>
     <div id="recentGrid" class="recent-grid" style="margin-bottom:2.5rem">
       <div class="empty-state" style="grid-column:1/-1; padding:2rem;">
         <span class="empty-emoji">📍</span>
-        <div class="empty-title">Aún sin aventuras</div>
+        <div class="empty-title">Aún sin viajes</div>
         <div class="empty-sub">Generemos el primer plan y marquémoslo como hecho</div>
       </div>
     </div>
@@ -2232,8 +2232,8 @@ function renderHome() {
   if (!recent.length) {
     grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1; padding:2rem;">
       <span class="empty-emoji">📍</span>
-      <div class="empty-title">Aún sin aventuras</div>
-      <div class="empty-sub">Genera tu primer plan y márcalo como hecho</div>
+      <div class="empty-title">Aún sin viajes</div>
+      <div class="empty-sub">Generemos un primer plan y marquémoslo como hecho</div>
     </div>`;
     return;
   }
